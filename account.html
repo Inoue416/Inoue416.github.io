@@ -11,14 +11,17 @@
             100% { transform: rotate(360deg); }
         }
         .spinner {
-            border-top-color: #3490dc;
+            border-top-color: #3490dc; /* 動いている部分の色 */
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
             animation: spin 1s linear infinite;
         }
     </style>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-gray-100">
     <div class="flex items-center justify-center">
-        <div class="w-16 h-16 border-4 border-blue-500 border-solid rounded-full spinner"></div>
+        <div class="w-16 h-16 border-4 border-gray-300 border-solid rounded-full spinner"></div>
     </div>
 </body>
 </html>
