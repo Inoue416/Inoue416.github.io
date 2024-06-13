@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,15 @@
             100% { transform: rotate(360deg); }
         }
         .spinner {
-            border-top-color: #3490dc; /* 動いている部分の色 */
-            border-right-color: transparent;
-            border-bottom-color: transparent;
-            border-left-color: transparent;
+            border-top-color: #3490dc;
             animation: spin 1s linear infinite;
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="flex items-center justify-center">
-        <div class="w-16 h-16 border-4 border-gray-300 border-solid rounded-full spinner"></div>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="flex flex-col items-center">
+        <div class="w-16 h-16 border-4 border-blue-500 rounded-full spinner"></div>
+        <p class="mt-4 text-blue-500 text-lg">Loading...</p>
     </div>
 </body>
 </html>
