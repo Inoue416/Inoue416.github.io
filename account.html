@@ -1,45 +1,24 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Account Info demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="./css/account.css" rel="stylesheet">
-  </head>
-  <body>
-    <main>
-        <header class="p-3 text-bg-dark">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="./index_is_login.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <span class="fs-4"><u>App Name or Icon</u></span>
-                </a>
-
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="./index_is_login.html" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="./request_list.html" class="nav-link px-2 text-white">依頼リスト</a></li>
-                    <li><a href="./work_list.html" class="nav-link px-2 text-white">仕事リスト</a></li>
-                    <li><a href="./setting.html" class="nav-link px-2 text-white">Setting(Profile)</a></li>
-                </ul>
-
-                <div class="text-end">
-                    <a href="./index_is_login.html"><button type="button" class="btn btn-outline-light me-2">LogOut</button></a>
-                </div>
-            </div>
-        </header>
-        <div class="container mt-3 marketing">
-            <p class="mb-5">
-                コメント：アカウントのアイコンは丸型にするつもり<br />
-                こんな感じでユーザー情報を追記したい<br />
-                もしくは以下のリンクのような感じもいいかも<br />
-                <a href="https://bbbootstrap.com/snippets/bootstrap-5-myprofile-90806631">https://bbbootstrap.com/snippets/bootstrap-5-myprofile-90806631</a>
-            </p>
-            <div class="mt-4 mb-4 p-3 d-flex justify-content-center">
-                <div class="card p-4"> <div class=" image d-flex flex-column justify-content-center align-items-center"> <button class="btn btn-secondary"> <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" /></button> <span class="name mt-3">Eleanor Pena</span> <span class="idd">@eleanorpena</span> <div class="d-flex flex-row justify-content-center align-items-center gap-2"> <span class="idd1">Oxc4c16a645_b21a</span> <span><i class="fa fa-copy"></i></span> </div> <div class="d-flex flex-row justify-content-center align-items-center mt-3"> <span class="number">1069 <span class="follow">Followers</span></span> </div> <div class=" d-flex mt-2"> <a href="form_client_to_constractor.html"><button class="btn1 btn-dark">依頼</button></a> </div> <div class="text mt-3"> <span>Eleanor Pena is a creator of minimalistic x bold graphics and digital artwork.<br><br> Artist/ Creative Director by Day #NFT minting@ with FND night. </span> </div> <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"> <span><i class="fa fa-twitter"></i></span> <span><i class="fa fa-facebook-f"></i></span> <span><i class="fa fa-instagram"></i></span> <span><i class="fa fa-linkedin"></i></span> </div> <div class=" px-2 rounded mt-4 date "> <span class="join">Joined May,2021</span> </div> </div> </div>
-            </div>
-        </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>  </body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .spinner {
+            border-top-color: #3490dc;
+            animation: spin 1s linear infinite;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="flex items-center justify-center">
+        <div class="w-16 h-16 border-4 border-blue-500 border-solid rounded-full spinner"></div>
+    </div>
+</body>
 </html>
